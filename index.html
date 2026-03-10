@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <p> <spam class="name">B</spam> <spam class="name-2">harti.</spam></p>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="clossmenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()" ></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Bharti</span> <br>Bansal From Canada</h1>
+        </div>
+       </div>
+    </div>
+
+    <!--------About----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm a Software Developer, passionate about applying my knowledge to enhance our operational efficiency. <br><br>
+
+                        With my academic journey in Computer Science from York University and hands-on experience in operating machine and the technical industry, I'm eager to develop applications that meet the needs of customers. <br><br>
+                        
+                        <!-- -Languages: Java, Python, C, MySQL, JavaScript, HTML/CSS <br>
+                        -Testing Tools: Postman, JUNit <br>
+                        -API: XML, JSON , REST <br>
+                        -Frameworks: React, Node.js <br>
+                        -Developer Tools: Git,Visual Studio, IntelliJ, Eclipse <br>
+                        -Microsoft Tools: MS office, MS Excel, MS PowerPoint, MS Project <br><br>
+                        
+                        I'm trying to apply these skills in real-world problems, like developing and deploying projects that can enhance efficiency. <br><br>
+                        
+                        My certifications in Web Development and App Development highlight my commitment to continuous learning and staying ahead of industry trends. <br><br>
+                        
+                        Let's connect to explore how we can drive success in your software development projects with my combination of technical skills, innovative thinking, and real-world experience! 🚀 -->
+                    </p> 
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Computer Numerical Control Machine Operator</span><br>Superpufft 2022-present</li>
+                                <li><span>Assistent Machine Operator</span><br>Superpufft 2021-2022</li>
+                                <li><span>Front-End Developer</span><br>2019-2020</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>Bachelors of Science(Computer Science)</span><br>York University 2021-2024</li>
+                                <li><span>Bachelors of Technology(Computer Science)</span><br>Chitkara University 2018-2020</li>
+                                <li><span>High School </span><br>INDIA 2015-2017</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------Services------------->
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I will Engineer a Website <br>According to your needs <br>and desires</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I will Engineer an App <br>According to your needs <br>and desires</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I will Engineer a design <br>According to your needs <br>and desires</p>
+                    <a href="#">Learn More</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+     <!------------------Services------------->
+     <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Work</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="">
+                    <div class="layer">
+                        <h3>WanderLust</h3>
+                        <p>A website for booking places typically provides an easy-to-use platform for users to search, compare, and reserve accommodations</p>
+                        <a href="https://project-h2c4.onrender.com/listings"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>A creative music Player Website that allows to play music and Display the Thumbnail of the video </p>
+                        <a href="file:///Users/bhartibansal/Desktop/web%20development/spotify_clone/index.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Game -Rock Paper Scissor</h3>
+                        <p>A childhood game (rock -paper -scissor) to spend free time by playing with Computer</p>
+                        <a href="file:///Users/bhartibansal/Desktop/web%20development/Rock_paper_scissor/index.html"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+             
+     <a href="#" class="btn">See More</a>
+        </div>
+     </div>
+<!----------------Contanct--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title"> Contact Me</h1>
+              <p><i class="fa-solid fa-envelope"></i> bhartibansal0219@gmail.com</p>
+              <p><i class="fa-solid fa-square-phone"></i> +1 6475102192</p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/bharti-bansal-bs0219/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/bharti0219"><i class="fa-brands fa-square-github"></i></a>
+              </div>
+              <a href="bharti.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &copy; Bharti.</p>
+    </div>
+</div>
+    
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function clossmenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwWtaq7I2hj2Ia8-KOunOa1ZzxN3_5AgfyerkpysKjEBdgGj91ADmS1jIgdqW01pg4y/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML="Message sent successfully" 
+            setTimeout(function()
+        {
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
